@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Scribe++",
+  "version": "0.1.0",
+  "description": "Agentic observability layer for organizational memory automation.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Scribe++"
+  }
+}
