@@ -1,0 +1,26 @@
+{
+  "name": "scribe-plus-plus",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agentic browser observability layer for organizational memory automation.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "vitest": "latest"
+  }
+}
